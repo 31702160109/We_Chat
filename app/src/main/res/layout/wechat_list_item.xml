@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                android:layout_height="match_parent">
+    <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="时间"
+            android:gravity="center"
+            android:textSize="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#dedede"/>
+    <ImageView
+            android:id="@+id/list_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:paddingBottom="5dp"
+            android:src="@drawable/touxiang1"
+    />
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_icon"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/list_icon"
+            android:layout_toRightOf="@+id/list_icon"
+            android:gravity="center"
+            android:orientation="vertical" tools:ignore="UnknownId">
+
+        <TextView
+                android:id="@+id/list_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="hello"
+                android:textSize="10sp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="10dp"
+                android:textColor="#fff"
+        />
+
+        <TextView
+                android:id="@+id/list_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/tv_xx"
+                />
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="3sp"
+        />
+    </LinearLayout>
+
+
+</RelativeLayout>
+

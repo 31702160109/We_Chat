@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Register"
+    android:background="#212">
+    -
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+
+        -
+
+        <LinearLayout
+            android:id="@+id/ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#212"
+            android:orientation="horizontal">
+
+            <!--返回-->
+
+
+            <ImageView
+                android:id="@+id/cloes"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:layout_margin="8sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_marginLeft="-20sp"
+                android:layout_marginTop="70sp"
+                android:text="账号注册"
+                android:textColor="#c7bae4"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+
+        -
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#212"
+            android:layout_below="@id/ll_title"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="50sp"
+            android:layout_marginRight="15sp"
+            android:orientation="vertical">
+
+            <!--昵称-->
+
+
+            -
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:text="昵称："
+                    android:textColor="#c7bae4"
+                    android:textSize="17sp" />
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_toRightOf="@id/tv_name"
+                    android:hint="请输入昵称"
+                    android:paddingLeft="10dp"
+                    android:textColor="#c7bae4"
+                    android:background="@drawable/edit_bg"
+                    android:textColorHint="#95A1AA"
+                    android:textSize="17sp"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <!--账号-->
+
+
+            -
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="11dp">
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:text="账号："
+                    android:textColor="#c7bae4"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/et_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_toRightOf="@id/tv_username"
+                    android:hint="请输入账号"
+                    android:paddingLeft="10dp"
+                    android:textColor="#c7bae4"
+                    android:background="@drawable/edit_bg"
+                    android:textColorHint="#95A1AA"
+                    android:textSize="17sp"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <!--密码-->
+
+
+            -
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="11dp">
+
+                <TextView
+                    android:id="@+id/tv_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:text="密码："
+                    android:textColor="#c7bae4"
+                    android:textSize="17sp" />
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_toRightOf="@id/tv_password"
+                    android:hint="请输入密码"
+                    android:paddingLeft="10dp"
+                    android:textColor="#c7bae4"
+                    android:background="@drawable/edit_bg"
+                    android:textColorHint="#95A1AA"
+                    android:textSize="17sp"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!--注册按钮-->
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/ll"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/button_bk"
+            android:text="注       册"
+            android:textColor="#c7bae4"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
